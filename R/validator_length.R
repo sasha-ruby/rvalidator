@@ -6,6 +6,7 @@
 #' @param max The maximum length.
 #' @param message Custom error message. If NULL, default messages are used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @examples
 #' length_validator("Hello", min = 3, max = 10)
 #' length_validator("Hi", min = 3)

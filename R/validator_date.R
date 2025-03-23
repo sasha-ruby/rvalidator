@@ -5,6 +5,7 @@
 #' @param format The date format to validate against (default is "%Y-%m-%d").
 #' @param message Custom error message. If NULL, a default message is used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @examples
 #' date_validator("2021-12-31")
 #' date_validator("31/12/2021", format = "%d/%m/%Y")

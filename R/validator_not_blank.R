@@ -4,6 +4,7 @@
 #' @param value The value to validate.
 #' @param message Custom error message. If NULL, a default message is used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @examples
 #' not_blank("Hello")
 #' not_blank("")

@@ -8,6 +8,7 @@
 #' @param max_height Maximum height in pixels. Default is Inf.
 #' @param message Custom error message. If NULL, default messages are used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @examples
 #' # In a Shiny app, use image_validator(input$file)
 image_validator <- function(file, max_size = Inf, allowed_types = c("image/png", "image/jpeg", "image/jpg", "image/gif"), max_width = Inf, max_height = Inf, message = NULL) {

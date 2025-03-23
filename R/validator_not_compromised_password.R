@@ -5,6 +5,7 @@
 #' @param value The password to validate.
 #' @param message Custom error message. If NULL, a default message is used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @note This function uses the Have I Been Pwned API and the k-anonymity model.
 #' @examples
 #' not_compromised_password("P@ssw0rd!")

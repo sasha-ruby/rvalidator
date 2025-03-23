@@ -5,6 +5,7 @@
 #' @param protocols A character vector of allowed protocols (e.g., c("http", "https")). Default is c("http", "https").
 #' @param message Custom error message. If NULL, a default message is used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @examples
 #' url_validator("https://www.example.com")
 #' url_validator("ftp://example.com", protocols = c("ftp"))

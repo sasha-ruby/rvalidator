@@ -9,6 +9,7 @@
 #' @param min_special Minimum number of special characters. Default is 1.
 #' @param custom_message Custom error message. If NULL, default messages are used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @examples
 #' password_strength("P@ssw0rd!")
 #' password_strength("weakpassword", custom_message = "Password is too weak.")

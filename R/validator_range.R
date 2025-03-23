@@ -6,6 +6,7 @@
 #' @param max The maximum value.
 #' @param message Custom error message. If NULL, default messages are used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @examples
 #' range_validator(5, min = 1, max = 10)
 #' range_validator(15, max = 10)

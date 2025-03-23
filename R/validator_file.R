@@ -6,6 +6,7 @@
 #' @param allowed_types A vector of allowed MIME types. Default is NULL (all types allowed).
 #' @param message Custom error message. If NULL, default messages are used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @examples
 #' # In a Shiny app, use file_validator(input$file)
 file_validator <- function(file, max_size = Inf, allowed_types = NULL, message = NULL) {

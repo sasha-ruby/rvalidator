@@ -5,6 +5,7 @@
 #' @param choices A vector of allowed choices.
 #' @param message Custom error message. If NULL, a default message is used.
 #' @return A list with `is_valid` (logical) and `message` (character).
+#' @export
 #' @examples
 #' choice_validator("apple", choices = c("apple", "banana", "cherry"))
 #' choice_validator("orange", choices = c("apple", "banana", "cherry"))
