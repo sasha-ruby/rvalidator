@@ -3,7 +3,6 @@
 #' @param a First value
 #' @param b Default value if a is NULL
 #' @return a if not NULL, otherwise b
-#' @export
 `%||%` <- function(a, b) {
   if (!is.null(a)) a else b
 }
