@@ -10,7 +10,6 @@
 #' @examples
 #' # In a Shiny app, use file_validator(input$file)
 file_validator <- function(file, max_size = Inf, allowed_types = NULL, message = NULL) {
-  library(glue)
   is_valid <- TRUE
   messages <- c()
 

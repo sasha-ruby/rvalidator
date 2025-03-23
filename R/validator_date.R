@@ -11,7 +11,6 @@
 #' date_validator("31/12/2021", format = "%d/%m/%Y")
 #' date_validator("invalid date", message = "Please enter a valid date.")
 date_validator <- function(value, format = "%Y-%m-%d", message = NULL) {
-  library(glue)
   # Use strptime for parsing
   parsed_date <- strptime(value, format = format)
   # Check if parsing was successful and the formatted date matches the input

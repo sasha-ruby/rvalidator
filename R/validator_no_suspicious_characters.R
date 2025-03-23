@@ -13,7 +13,6 @@
 #' # Invalid input with zero-width space
 #' no_suspicious_characters("String with zero-width space\u200B")
 no_suspicious_characters <- function(value, message = NULL) {
-  library(glue)
   # Define the code points for suspicious characters
   suspicious_code_points <- c(
     0:31,   # Control characters U+0000 to U+001F

@@ -11,7 +11,6 @@
 #' range_validator(5, min = 1, max = 10)
 #' range_validator(15, max = 10)
 range_validator <- function(value, min = NULL, max = NULL, message = NULL) {
-  library(glue)
   is_valid <- TRUE
   messages <- c()
 

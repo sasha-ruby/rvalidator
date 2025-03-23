@@ -11,7 +11,6 @@
 #' url_validator("ftp://example.com", protocols = c("ftp"))
 #' url_validator("invalid_url")
 url_validator <- function(value, protocols = c("http", "https"), message = NULL) {
-  library(glue)
   protocol_pattern <- paste(protocols, collapse = "|")
   pattern <- glue("^(?:{protocol_pattern})://[\\w.-]+(?:\\.[\\w.-]+)+[/\\w\\-.~?&=%+#]*$")
   is_valid <- grepl(pattern, value, perl = TRUE)

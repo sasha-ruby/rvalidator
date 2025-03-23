@@ -11,7 +11,6 @@
 #' length_validator("Hello", min = 3, max = 10)
 #' length_validator("Hi", min = 3)
 length_validator <- function(value, min = NULL, max = NULL, message = NULL) {
-  library(glue)
   n <- nchar(value)
   is_valid <- TRUE
   messages <- c()

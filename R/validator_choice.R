@@ -10,7 +10,6 @@
 #' choice_validator("apple", choices = c("apple", "banana", "cherry"))
 #' choice_validator("orange", choices = c("apple", "banana", "cherry"))
 choice_validator <- function(value, choices, message = NULL) {
-  library(glue)
   is_valid <- value %in% choices
   default_message <- glue("The value '{value}' is not a valid choice.")
   message <- if (is_valid) "" else (message %||% default_message)

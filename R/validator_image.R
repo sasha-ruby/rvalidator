@@ -12,8 +12,6 @@
 #' @examples
 #' # In a Shiny app, use image_validator(input$file)
 image_validator <- function(file, max_size = Inf, allowed_types = c("image/png", "image/jpeg", "image/jpg", "image/gif"), max_width = Inf, max_height = Inf, message = NULL) {
-  library(glue)
-  library(magick)
   is_valid <- TRUE
   messages <- c()
 

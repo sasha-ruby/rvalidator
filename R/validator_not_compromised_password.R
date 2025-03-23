@@ -10,10 +10,6 @@
 #' @examples
 #' not_compromised_password("P@ssw0rd!")
 not_compromised_password <- function(value, message = NULL) {
-  library(glue)
-  library(digest)
-  library(httr)
-
   sha1_hash <- toupper(digest(value, algo = "sha1", serialize = FALSE))
   prefix <- substr(sha1_hash, 1, 5)
   suffix <- substr(sha1_hash, 6, nchar(sha1_hash))

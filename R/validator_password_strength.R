@@ -15,8 +15,6 @@
 #' password_strength("weakpassword", custom_message = "Password is too weak.")
 password_strength <- function(value, min_length = 8, min_upper = 1, min_lower = 1,
                               min_digit = 1, min_special = 1, custom_message = NULL) {
-  library(glue)
-
   # Helper function to count matches
   count_matches <- function(pattern, value) {
     matches <- gregexpr(pattern, value, perl = TRUE)

@@ -1,5 +1,4 @@
 test_that("image_validator works correctly", {
-  library(magick)
   temp_img <- image_blank(width = 800, height = 600, color = "white")
   temp_file <- tempfile(fileext = ".png")
   image_write(temp_img, path = temp_file, format = "png")
