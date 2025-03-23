@@ -3,7 +3,7 @@ Title: Validates Values Based On Constraints
 Version: 0.0.0.9000
 Authors@R: 
     person("Sasha", "Bogdanovic", , "sasha@cityviz.ca", role = c("aut", "cre"),
-           comment = c()
+           comment = c())
 Description: Validates values based on built-in and custom onstraints. Provides also integration for use in Shiny apps.
 License: MIT
 Encoding: UTF-8
